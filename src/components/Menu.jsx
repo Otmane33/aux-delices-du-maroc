@@ -38,15 +38,6 @@ const MenuSection = ({ title, items, imageSrc }) => (
 );
 
 const Menu = () => {
-  if (!menuData || !menuData.sections) {
-    console.error("Menu data is not in the expected format:", menuData);
-    return (
-      <div>
-        Error loading menu data. Please check the console for more information.
-      </div>
-    );
-  }
-
   return (
     <section id="menu" className="py-20 bg-sand-light">
       <div className="container mx-auto px-4">
