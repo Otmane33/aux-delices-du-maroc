@@ -2,7 +2,7 @@
   "sections": [
     {
       "title": "Entrées Froides",
-      "imageSrc": "/assets/images/entrees-froides.jpg",
+      "imageSrc": "/public/assets/images/entrees-froides.jpg",
       "items": [
         {
           "name": "Salade Marocaine",
@@ -24,10 +24,15 @@
     },
     {
       "title": "Entrées Chaudes",
-      "imageSrc": "/assets/images/entrees-chaudes.jpg",
+      "imageSrc": "/public/assets/images/entrees-chaudes.jpg",
       "items": [
         { "name": "Harira Marocaine", "price": 8 },
         { "name": "Brick à l'Œuf", "price": 5 },
+        { "name": "Brick de Chèvre au Miel", "price": 6.9 },
+        { "name": "Brick Kefta Mabsonet à l'Œuf", "price": 6.9 },
+        { "name": "Brick au Thon et à l'Œuf", "price": 6.9 },
+        { "name": "Brick aux Crevettes et à l'Œuf", "price": 6.9 },
+        { "name": "Brick au Poulet et à l'Œuf", "price": 6.9 },
         {
           "name": "Pastilla au Poulet",
           "description": "Feuilleté d'émincé de poulet, amandes grillées",
@@ -37,31 +42,131 @@
           "name": "Pastilla aux Fruits de Mer",
           "description": "Feuilleté et sa farce crevettes, moules, calamars et vermicelles",
           "price": 14.5
+        },
+        {
+          "name": "Chakchouka",
+          "description": "Feuilleté et sa farce crevettes, moules, calamars et vermicelles",
+          "price": 8
+        }
+      ]
+    },
+    {
+      "title": "Nos Salades",
+      "imageSrc": "/public/assets/images/salades.jpg",
+      "items": [
+        {
+          "name": "Salade Composée",
+          "description": "Avocat, salade verte, thon, maïs, tomates et olives",
+          "price": 16.5
+        },
+        {
+          "name": "Salade Fraîcheur",
+          "description": "Concombre, salade, tomate, endives, œufs, carottes râpées",
+          "price": 16.5
+        },
+        {
+          "name": "Salade Océane",
+          "description": "Crevettes, thon, avocat, salade, tomates et olives",
+          "price": 18
+        },
+        {
+          "name": "Salade Méditerranéenne",
+          "description": "Aubergines grillées, tomate, mozzarella, concombre, salade, parmesan et olives",
+          "price": 18
         }
       ]
     },
     {
       "title": "Couscous",
-      "imageSrc": "/assets/images/couscous.jpg",
+      "imageSrc": "/public/assets/images/couscous.jpg",
       "items": [
+        { "name": "Couscous aux Légumes", "price": 14.5 },
+        { "name": "Couscous aux Merguez", "price": 16.5 },
+        { "name": "Couscous Kefta de Bœuf Maison", "price": 17.5 },
+        { "name": "Couscous au Poulet", "price": 18.5 },
+        { "name": "Couscous aux Brochettes de Poulet", "price": 18.5 },
+        { "name": "Couscous à l'Agneau", "price": 18.5 },
+        { "name": "Couscous aux Brochettes d'Agneau", "price": 19.5 },
         {
           "name": "Couscous Royal",
-          "description": "Agneau, poulet, Merguez, Brochette agneau",
+          "description": "Agneau, poulet, Merguez,Brochette agneau",
           "price": 20.5
         },
-        { "name": "Couscous aux Légumes", "price": 14.5 },
-        { "name": "Couscous au Poulet", "price": 18.5 },
-        { "name": "Couscous à l'Agneau", "price": 18.5 }
+        {
+          "name": "Couscous Fassi Poulet (Agneau +1€)",
+          "description": "Confit d'oignons, raisins secs, amandes grillées et miel",
+          "price": 19.7
+        },
+        {
+          "name": "Couscous Maison",
+          "description": "Kefta (boulettes de viande hachée maison), brochette de poulet, merguez, et agneau",
+          "price": 21.7
+        },
+        {
+          "name": "Couscous Mechoui",
+          "description": "Épaule d'agneau grillée au four",
+          "price": 23
+        },
+        {
+          "name": "Couscous Grillades",
+          "description": "Côtes d'agneau, brochette de poulet et merguez",
+          "price": 21
+        }
       ]
     },
     {
       "title": "Tajines",
-      "imageSrc": "/assets/images/tajines.jpg",
+      "imageSrc": "/public/assets/images/tajines.jpg",
       "items": [
         {
-          "name": "Tajine Agadir Poulet",
+          "name": "Tajine Agadir Poulet (Agneau +1€)",
           "description": "Pruneaux, œufs, amandes grillées",
           "price": 20
+        },
+        {
+          "name": "Tajine Atlas Poulet (Agneau +1€)",
+          "description": "Pommes de terre, oignons, petits pois, carottes et olives",
+          "price": 18.5
+        },
+        {
+          "name": "Tajine Rabat Poulet (Agneau +1€)",
+          "description": "Citron confit, olives, oignons et pommes de terre",
+          "price": 19.5
+        },
+        {
+          "name": "Tajine Délices Poulet (Agneau +1€)",
+          "description": "Aubergines, poivrons, oignons et tomates",
+          "price": 18.5
+        },
+        {
+          "name": "Tajine Oujda Poulet (Agneau +1€)",
+          "description": "Aubergines, poivrons, oignons et tomates",
+          "price": 19
+        },
+        {
+          "name": "Tajine Casa Artichauts Poulet (Agneau +1€)",
+          "description": "Artichauts, petits pois et oignons",
+          "price": 19
+        },
+        {
+          "name": "Tajine aux 4 Fruits Agneau",
+          "description": "Artichauts, petits pois et oignons",
+          "price": 21.9
+        },
+        {
+          "name": "Tajine Fes Mrouzia Sucrée/Salé Agneau",
+          "description": "Confit d'oignons, raisins secs, amandes grillées et miel",
+          "price": 19.5
+        },
+        {
+          "name": "Tajine du Chef Agneau",
+          "description": "Coings caramélisés (selon la saison) OU poires caramélisées et fruits secs",
+          "price": 19.5
+        },
+        {
+          "name": "Tajine Kefta de Bœuf Maison",
+          "description": "Kefta (boulettes de bœuf fait maison), oignons, tomates, œufs, petits pois et olives",
+          "price": 17.5
         },
         {
           "name": "Tajine aux Légumes",
@@ -69,9 +174,77 @@
           "price": 15.5
         },
         {
+          "name": "Tajine Poisson Safi Crevettes",
+          "description": "Crevettes et sa marinade à la marocaine",
+          "price": 22
+        },
+        {
+          "name": "Tajine Poisson Tanger Cabillaud",
+          "description": "Cabillaud et sa marinade à la marocaine",
+          "price": 23.5
+        },
+        {
           "name": "Tajine de Lotte",
           "description": "et sa marinade à la marocaine",
           "price": 22.5
+        }
+      ]
+    },
+    {
+      "title": "Grillades",
+      "imageSrc": "/public/assets/images/grillades.jpg",
+      "items": [
+        {
+          "name": "Brochettes de Poulet et 1 Accompagnement au Choix",
+          "price": 17.5
+        },
+        {
+          "name": "Brochettes d'Agneau et 1 Accompagnement au Choix",
+          "price": 19.7
+        },
+        { "name": "Côte d'Agneau et 1 Accompagnement au Choix", "price": 18.7 },
+        {
+          "name": "Mechoui d'Agneau et 1 Accompagnement au Choix",
+          "price": 23
+        },
+        {
+          "name": "Plateau aux Délices du Maroc",
+          "description": "Merguez, brochette de poulet, brochette d'agneau et kefta (boulette de bœuf maison)",
+          "price": 22
+        }
+      ]
+    },
+    {
+      "title": "Desserts",
+      "imageSrc": "/public/assets/images/desserts.jpg",
+      "items": [
+        { "name": "Pâtisserie Marocaine (1 Pièce)", "price": 3 },
+        {
+          "name": "Salade d'Oranges Parfumées",
+          "description": "Oranges parfumées à la fleur d'oranger et à la cannelle",
+          "price": 6
+        },
+        { "name": "Salade d'Ananas", "price": 6.5 },
+        { "name": "Dattes Medjool", "price": 6 },
+        {
+          "name": "Baghrir",
+          "description": "Crêpe mille trous au miel ou caramel beurre salé",
+          "price": 7
+        },
+        {
+          "name": "Assortiment de Pâtisseries Marocaines",
+          "description": "Assortiment de 2 pièces au choix et dattes",
+          "price": 8.5
+        },
+        {
+          "name": "Café Gourmand",
+          "description": "Café, 2 pâtisseries marocaines et datte",
+          "price": 10
+        },
+        {
+          "name": "Thé Gourmand",
+          "description": "Thé à la menthe, 2 pâtisseries marocaines et datte",
+          "price": 10
         }
       ]
     }
